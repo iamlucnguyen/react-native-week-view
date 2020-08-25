@@ -34,8 +34,6 @@ export default class WeekView extends Component {
 		this.currentPageIndex = 2;
 		this.totalPages = this.pagesLeft + this.pagesRight + 1;
 		this.eventsGridScrollX = new Animated.Value(0);
-
-		setLocale(props.locale);
 	}
 
 	componentDidMount() {
@@ -228,7 +226,7 @@ export default class WeekView extends Component {
 						))}
 					</ScrollView>
 				</View>
-				<ScrollView ref={this.verticalAgendaRef} style={{ marginTop: -20 }} showsVerticalScrollIndicator={false}>
+				<ScrollView ref={this.verticalAgendaRef} showsVerticalScrollIndicator={false}>
 					<View style={styles.scrollViewContent}>
 						<Times times={times} />
 						<ScrollView
