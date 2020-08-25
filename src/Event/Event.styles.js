@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   description: {
     color: '#fff',
     textAlign: 'center',
-    fontSize: 17,
+    fontSize: 10,
   },
 });
 

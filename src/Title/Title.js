@@ -21,7 +21,7 @@ const Title = ({ style, numberOfDays, selectedDate }) => {
           fontSize: getFontSizeHeader(numberOfDays),
         }}
       >
-        {getCurrentMonth(selectedDate)}
+        {/* {getCurrentMonth(selectedDate)} */}
       </Text>
     </View>
   );
