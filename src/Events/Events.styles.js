@@ -7,7 +7,6 @@ export const CONTENT_OFFSET = 16;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 16,
     width: SCREEN_WIDTH - 60,
   },
   timeRow: {
@@ -24,7 +23,8 @@ const styles = StyleSheet.create({
     flex: 1,
     overflow: 'hidden',
     borderColor: GREY_COLOR,
-    borderLeftWidth: 1,
+	borderLeftWidth: 1,
+	borderBottomWidth: 1
   },
   events: {
     position: 'absolute',

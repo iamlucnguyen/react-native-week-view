@@ -14,10 +14,9 @@ const getFontSizeHeader = (numberOfDays) => {
 
 const Title = ({ style, numberOfDays, selectedDate }) => {
   return (
-    <View style={[styles.title, style]}>
+    <View style={[styles.title]}>
       <Text
         style={{
-          color: style.color,
           fontSize: getFontSizeHeader(numberOfDays),
         }}
       >

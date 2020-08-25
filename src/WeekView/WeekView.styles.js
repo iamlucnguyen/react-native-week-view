@@ -4,10 +4,11 @@ const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+	flex: 1
   },
   scrollViewContent: {
-    flexDirection: 'row',
+	flexDirection: 'row',
+	paddingBottom: 30
   },
   headerContainer: {
     flexDirection: 'row',
