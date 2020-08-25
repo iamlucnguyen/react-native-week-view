@@ -35,8 +35,10 @@ class Events extends PureComponent {
 		const height = this.minutesToYDimension(deltaMinutes);
 		const width = this.getEventItemWidth();
 
+		console.log(startDate, startHours, startMinutes)
+
 		return {
-			top: top + CONTENT_OFFSET,
+			top: top,
 			left: 0,
 			height,
 			width,
