@@ -192,7 +192,8 @@ export default class WeekView extends Component {
 			onEventPress,
 			events,
 			hoursInDisplay,
-			onGridClick
+			onGridClick,
+			disabled
 		} = this.props;
 		const { currentMoment } = this.state;
 		const times = this.calculateTimes(hoursInDisplay);
@@ -232,9 +233,11 @@ export default class WeekView extends Component {
 						<ScrollView
 							horizontal
 							pagingEnabled
+							showsHorizontalScrollIndicator={false}
 							automaticallyAdjustContentInsets={false}
 							onMomentumScrollEnd={this.scrollEnded}
 							scrollEventThrottle={32}
+							scrollEnabled={disabled ? false : true}
 							onScroll={Animated.event(
 								[
 									{
